@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <!-- Correct the malformed viewport meta for proper responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add a restrictive Content Security Policy to mitigate XSS and other attacks -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'">
     <title>Hello World</title>
 </head>
 <body>
+    <!-- Add an accessible top-level heading -->
+    <h1>Hello World</h1>
     
 </body>
 </html>
